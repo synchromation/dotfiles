@@ -24,6 +24,8 @@ fi
 # Install homebrew packages
 brew install cask chisel
 
+brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+
 # Install cask apps
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
