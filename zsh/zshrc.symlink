@@ -1,5 +1,27 @@
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+export DOT_FILES=$HOME/.dotfiles
+export ZSH=$DOT_FILES/oh-my-zsh
+
+
+# legacy zsh config
+ZSH_THEME="pygmalion"
+
+plugins=(git z bundler brew)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+export PATH=$PATH:"/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export LANG=en_US.UTF-8
+
+PATH=$PATH:/usr/local/smlnj-110.75/bin
+
+alias gp='$(git push origin $(git symbolic-ref --short HEAD))'
+alias gpf='(git push origin $(git symbolic-ref --short HEAD) --force)'
+alias gf='$(git fetch origin --prune)'
+alias es=/Applications/Emacs.app/Contents/MacOS/Emacs
+
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -11,7 +33,7 @@ fi
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=( $(find $DOT_FILES -not -path '*/\oh-my-zsh*' -type f -name '*.zsh') )
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}

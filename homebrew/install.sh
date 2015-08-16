@@ -22,6 +22,26 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark
+brew install cask chisel
+
+# Install cask apps
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+brew cask install \
+     todoist\
+     evernote\
+     utorrent\
+     vlc\
+     viber\
+     spotify\
+     slack\
+     skype\
+     iterm2\
+     appcleaner\
+     dropbox\
+     google-photos-backup\
+     daisydisk\
+     charles\
+     telegram
 
 exit 0
