@@ -17,12 +17,6 @@ export LANG=en_US.UTF-8
 
 PATH=$PATH:/usr/local/smlnj-110.75/bin
 
-alias gp='$(git push origin $(git symbolic-ref --short HEAD))'
-alias gpf='(git push origin $(git symbolic-ref --short HEAD) --force)'
-alias gf='$(git fetch origin --prune)'
-alias es=/Applications/Emacs.app/Contents/MacOS/Emacs
-
-
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
