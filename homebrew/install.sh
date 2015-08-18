@@ -44,6 +44,7 @@ brew cask install \
      google-photos-backup\
      daisydisk\
      charles\
-     telegram
+     telegram\
+     sublime-text
 
 exit 0
