@@ -4,7 +4,7 @@ export ZSH=$DOT_FILES/oh-my-zsh
 
 
 # legacy zsh config
-ZSH_THEME="pygmalion"
+ZSH_THEME="agnoster"
 
 plugins=(git z bundler brew)
 

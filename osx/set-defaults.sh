@@ -122,3 +122,6 @@ defaults write com.apple.dock autohide -bool true
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# Enables text selection in QuickLook
+defaults write com.apple.finder QLEnableTextSelection -bool true

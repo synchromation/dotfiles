@@ -21,10 +21,14 @@ then
   
 fi
 
-# Install homebrew packages
-brew install cask chisel
+# Make sure we’re using the latest Homebrew.
+brew update
 
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+# Upgrade any already-installed formulae.
+brew upgrade --all
+
+# Install homebrew packages
+brew install cask chisel jq
 
 # Install cask apps
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -46,5 +50,14 @@ brew cask install \
      charles\
      telegram\
      sublime-text
+
+#QuickLook plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook provisionql
+qlmanage -r
+
+#Cleanup old versions
+
+brew cleanup
+brew cask cleanup
 
 exit 0
