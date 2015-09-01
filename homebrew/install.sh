@@ -49,7 +49,8 @@ brew cask install \
      daisydisk\
      charles\
      telegram\
-     sublime-text
+     sublime-text\
+     ynab
 
 #QuickLook plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook provisionql
