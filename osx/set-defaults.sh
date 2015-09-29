@@ -107,6 +107,10 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
+# Dock icon size
+
+defaults write com.apple.dock tilesize -int 30
+
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
 
@@ -122,9 +126,24 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Disable Notification Center and remove the menu bar icon
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
+# Disable magnification
+defaults write com.apple.dock expose-animation-duration -int 0
+
+# Pin to right side
+defaults write com.apple.dock orientation -string right
+
+# Restart Dock
+killall Dock
+
 ############
 # Terminal #
 ############
+
+# Set custom preferences location
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string $DOT_FILES/iterm2
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
