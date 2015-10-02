@@ -1,0 +1,61 @@
+# Sample gitconfig
+#
+
+[hub]
+        protocol = https
+[user]
+        name = Denis Lebedev
+	email = d2.lebedev@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+        co = checkout
+	ci = commit
+	st = status
+	br = branch
+	b = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	ds = diff --stat=160,120
+	dh1 = diff HEAD~1
+	promote = !$DOT_FILES/bin/git-promote
+        wtf     = !$DOT_FILES/bin/git-wtf
+        rank-contributors = !$DOT_FILES/bin/git-rank-contributors
+        count   = !git shortlog -sn
+	r = !git l -30
+	ra = !git r --all
+	l = "!. $DOT_FILES/functions/git-pretty-log && git_pretty_log"
+
+	# Goodness (summary of diff lines added/removed/total)
+	gn = goodness
+	gnc = goodness --cached
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        excludesfile = ~/.gitignore
+	editor = vim
+
+	# Make `git rebase` safer on OS X
+  	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+   	trustctime = false
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
+[push]
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        #
+        # Setting to git 2.0 default to suppress warning message
+        default = simple
+[merge "mergepbx"]
+	# Do not forget to add '*.pbxproj merge=mergepbx' to your project .gitattributes
+        name = Xcode project files merger
+	driver = mergepbx %O %A %B
+	
