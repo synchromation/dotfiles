@@ -11610,3 +11610,4 @@
 127.0.0.1 activate.adobe.com
 0.0.0.0 pubads.g.doubleclick.net
 0.0.0.0 securepubads.g.doubleclick.net
+127.0.0.1 example.dev

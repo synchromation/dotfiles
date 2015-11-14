@@ -35,7 +35,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 brew cask install \
      todoist\
-     evernote\
      utorrent\
      vlc\
      viber\
@@ -54,7 +53,8 @@ brew cask install \
      flux\
      clipmenu\
      anki\
-     nvalt
+     nvalt\
+     rescuetime
 
 #QuickLook plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook provisionql
