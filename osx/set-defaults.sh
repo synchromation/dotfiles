@@ -150,3 +150,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Enables text selection in QuickLook
 defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Disable Photos.app launch
+defaults write com.apple.ImageCapture disableHotPlug -bool YES
+
