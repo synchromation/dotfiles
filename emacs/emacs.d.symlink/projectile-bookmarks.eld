@@ -1,1 +1,0 @@
-("~/src/work/latam-wiremock/")

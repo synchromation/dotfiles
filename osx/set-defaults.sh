@@ -133,7 +133,7 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.
 defaults write com.apple.dock expose-animation-duration -int 0
 
 # Pin to right side
-defaults write com.apple.dock orientation -string right
+defaults write com.apple.dock orientation -string bottom
 
 # Restart Dock
 killall Dock
@@ -153,4 +153,3 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 
 # Disable Photos.app launch
 defaults write com.apple.ImageCapture disableHotPlug -bool YES
-
