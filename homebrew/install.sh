@@ -28,7 +28,7 @@ brew update
 brew upgrade --all
 
 # Install homebrew packages
-brew install cask chisel jq mergepbx
+brew install cask chisel jq hub mergepbx
 
 # Install cask apps
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
