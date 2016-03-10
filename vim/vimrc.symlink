@@ -11,9 +11,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Solarized
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'blueshirts/darcula'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -36,7 +36,7 @@ hi cursorline guibg=#444444
 au! BufWritePost .vimrc so %
 au! BufWritePost .gvimrc so %
 
-colorscheme solarized
+colorscheme darcula
 
 map <F2> :NERDTreeToggle<CR>
 
