@@ -14,10 +14,15 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'blueshirts/darcula'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'elmcast/elm-vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set guifont=Hack:h15
+set guifont=SauceCodePowerline-Regular:h16
 set lines=30
 set columns=150
 set background=dark
@@ -39,4 +44,49 @@ au! BufWritePost .gvimrc so %
 colorscheme darcula
 
 map <F2> :NERDTreeToggle<CR>
+
+" Searches
+set hlsearch              " highlight search results
+set incsearch             " search whilst typing
+set ignorecase            " case insensitive searching
+set smartcase             " override ignorecase if upper case typed
+
+" Map leader
+let mapleader = ','
+
+" Buffer selection
+nnoremap <leader>n :bn<CR>
+nnoremap <leader>p :bp<CR>
+nnoremap <C-Tab> :bn<CR>
+
+" Pane navigation
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Autocomplete with Ctrl+space o C-N
+inoremap <C-F> <C-X><C-F>
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+"  vim-airline
+set laststatus=2
+let g:airline_inactive_collapse = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'bubblegum'
+
+" elm-vim
+let g:elm_format_autosave = 1
+
+au FileType elm nmap <leader>b <Plug>(elm-make)
+au FileType elm nmap <leader>m <Plug>(elm-make-main)
+au FileType elm nmap <leader>t <Plug>(elm-test)
+au FileType elm nmap <leader>r <Plug>(elm-repl)
+au FileType elm nmap <leader>e <Plug>(elm-error-detail)
+au FileType elm nmap <leader>d <Plug>(elm-show-docs)
+au FileType elm nmap <leader>w <Plug>(elm-browse-docs)
 
