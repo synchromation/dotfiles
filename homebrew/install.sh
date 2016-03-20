@@ -31,7 +31,7 @@ brew upgrade --all
 
 # Install homebrew packages
 echo "Installing packages."
-brew install cask chisel jq hub mergepbx
+brew install cask chisel jq hub mergepbx swiftlint
 
 echo "Installing cask apps."
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
