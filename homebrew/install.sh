@@ -8,7 +8,7 @@
 # Check for Homebrew
 if test ! $(which brew)
 then
-  echo "  Installing Homebrew for you."
+  echo "Installing Homebrew for you."
 
   # Install the correct homebrew for each OS type
   if test "$(uname)" = "Darwin"
@@ -22,47 +22,43 @@ then
 fi
 
 # Make sure we’re using the latest Homebrew.
+echo "Updating homebrew."
 brew update
 
 # Upgrade any already-installed formulae.
+echo "Upgrading homebrew packages."
 brew upgrade --all
 
 # Install homebrew packages
+echo "Installing packages."
 brew install cask chisel jq hub mergepbx
 
-# Install cask apps
+echo "Installing cask apps."
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-brew cask install \
-     todoist\
-     utorrent\
-     vlc\
-     viber\
-     spotify\
-     slack\
-     skype\
-     iterm2\
-     appcleaner\
-     dropbox\
-     google-photos-backup\
-     daisydisk\
-     charles\
-     telegram\
-     sublime-text\
-     ynab\
-     flux\
-     clipmenu\
-     anki\
-     nvalt\
-     rescuetime
-
+APPS=(
+    todoist spectacle vlc viber spotify slack skype iterm2 appcleaner dropbox rescuetime
+    google-photos-backup daisydisk charles telegram ynab flux clipmenu anki nvalt
+    )
+for app in ${APPS[@]}; do
+    brew cask install $app
+done
+     
 #QuickLook plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook provisionql
+
+QLPLUGINS=(qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook provisionql)
+
+for plugin in ${QLPLUGINS[@]}; do
+    brew cask install $plugin
+done
+
 qlmanage -r
 
 #Cleanup old versions
 
+echo "Cleaning up..."
 brew cleanup
 brew cask cleanup
 
+echo "Done."
 exit 0
