@@ -1555,14 +1555,6 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
-	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads/iterm-colors-master/colors</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 565}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1580,33 +1572,18 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>319</string>
+		<string>302</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
-	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
-		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>836 333 445 77 0 0 1440 877 </string>
+	<string>1318 214 445 77 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>45 307 924 485 0 0 1440 877 </string>
-	<key>NSWindow Frame UKCrashReporter</key>
-	<string>35 0 592 584 0 0 1280 777 </string>
+	<string>269 110 924 485 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 329 810 536 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 11 1434 866 0 0 1440 877 </string>
+	<string>1329 631 1010 686 0 0 2560 1417 </string>
 	<key>NeverWarnAboutShortLivedSessions_962623CD-5417-46FA-ACEB-80B67C33CE80</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2165,11 +2142,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Hack 14</string>
+			<string>SauceCodePowerline-Regular 18</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hack 14</string>
+			<string>SauceCodePowerline-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2897,11 +2874,11 @@
 			<key>Name</key>
 			<string>Hotkey Window</string>
 			<key>Non Ascii Font</key>
-			<string>Hack 14</string>
+			<string>SauceCodePowerline-Regular 18</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hack 14</string>
+			<string>SauceCodePowerline-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3081,9 +3058,9 @@
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>454938789.67114502</real>
+	<real>478103170.39303797</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>462888872.59510201</real>
+	<real>479792932.827214</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -3132,7 +3109,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/denisl/.dotfiles/iterm2</string>
+	<string>/Users/denis/.dotfiles/iterm2</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -3143,18 +3120,14 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
-	<key>SUAutomaticallyUpdate</key>
-	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-09-02T20:59:48Z</date>
-	<key>SUSkippedVersion</key>
-	<string>2.1.1</string>
+	<date>2016-03-15T13:45:30Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -3179,8 +3152,6 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
-	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1412072704</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -3204,6 +3175,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.1.1</string>
+	<string>2.1.4</string>
 </dict>
 </plist>
