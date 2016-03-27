@@ -19,6 +19,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elmcast/elm-vim'
 Plugin 'keith/swift.vim'
+Plugin 'ervandew/supertab'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -26,7 +27,9 @@ filetype plugin indent on    " required
 set guifont=SauceCodePowerline-Regular:h16
 set lines=30
 set columns=150
+set colorcolumn=90
 set background=dark
+
 syntax on
 set autoindent
 set tabstop=4
@@ -51,6 +54,10 @@ set hlsearch              " highlight search results
 set incsearch             " search whilst typing
 set ignorecase            " case insensitive searching
 set smartcase             " override ignorecase if upper case typed
+
+"Keep more info in memory to speed things up
+set hidden
+set history=100
 
 " Map leader
 let mapleader = ','
