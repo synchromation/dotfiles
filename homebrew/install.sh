@@ -38,7 +38,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 APPS=(
     todoist spectacle vlc viber spotify slack skype iterm2 appcleaner dropbox rescuetime
-    google-photos-backup daisydisk charles telegram ynab flux clipmenu anki nvalt
+    google-photos-backup daisydisk charles telegram ynab flux clipmenu anki nvalt atom
     )
 for app in ${APPS[@]}; do
     brew cask install $app
