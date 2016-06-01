@@ -127,7 +127,7 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 defaults write com.apple.dock autohide -bool true
 
 # Disable Notification Center and remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
 # Disable magnification
 defaults write com.apple.dock expose-animation-duration -int 0
@@ -144,6 +144,9 @@ killall Dock
 
 # Set custom preferences location
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string $DOT_FILES/iterm2
+
+# Disable animation
+defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
