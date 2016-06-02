@@ -11615,3 +11615,33 @@
 127.0.0.1 swiftgift.dev
 www.paddleapi.com
 127.0.0.1 jarvis.swiftgift.dev
+
+127.0.0.1 media-match.com
+127.0.0.1 adclick.g.doublecklick.net
+127.0.0.1 www.googleadservices.com
+127.0.0.1 open.spotify.com
+127.0.0.1 pagead2.googlesyndication.com
+127.0.0.1 desktop.spotify.com
+127.0.0.1 googleads.g.doubleclick.net
+127.0.0.1 pubads.g.doubleclick.net
+127.0.0.1 audio2.spotify.com
+127.0.0.1 www.omaze.com
+127.0.0.1 omaze.com
+127.0.0.1 bounceexchange.com
+0.0.0.0 media-match.com
+0.0.0.0 adclick.g.doublecklick.net
+0.0.0.0 http://www.googleadservices.com
+0.0.0.0 open.spotify.com
+0.0.0.0 pagead2.googlesyndication.com
+0.0.0.0 desktop.spotify.com
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 audio2.spotify.com
+0.0.0.0 http://www.omaze.com
+0.0.0.0 omaze.com
+0.0.0.0 bounceexchange.com
+0.0.0.0 core.insightexpressai.com
+0.0.0.0 s0.2mdn.net
+0.0.0.0 content.bitsontherun.com
+0.0.0.0 d2gi7ultltnc2u.cloudfront.net
+0.0.0.0 adeventtracker.spotify.com

@@ -63,3 +63,7 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[reflow]
+	always-cleanup = true
+[include]
+	path = ~/.gitconfig.reflow
