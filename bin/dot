@@ -6,8 +6,16 @@
 # to make sure you're on the latest and greatest.
 export DOT_FILES=$HOME/.dotfiles
 
+<<<<<<< HEAD
 # Set OS X defaults
 $DOT_FILES/osx/set-defaults.sh
+=======
+# Set macOS defaults
+$ZSH/macos/set-defaults.sh
+
+# Install homebrew
+$ZSH/homebrew/install.sh 2>&1
+>>>>>>> bfb4bd1... refactor(macos): Update osx to macos
 
 # Upgrade homebrew
 brew update
