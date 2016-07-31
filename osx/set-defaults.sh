@@ -7,6 +7,9 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
+# Disable Storyboards reopening after Xcode relaunch.
+defaults write com.apple.dt.Xcode IDEDisableStateRestoration -bool true
+
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
 
