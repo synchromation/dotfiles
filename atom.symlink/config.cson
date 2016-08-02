@@ -5,13 +5,26 @@
       "exception-reporting"
       "metrics"
     ]
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+    ]
   editor:
     fontFamily: "Source Code Pro for Powerline"
     fontSize: 17
     preferredLineLength: 120
     showIndentGuide: true
-  "exception-reporting":
-    userId: "f3cd0861-62c1-373c-3ef3-8d9c92595f33"
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
+      "text.html.basic"
+    ]
   welcome:
     showOnStartup: false
 ".source.swift":
