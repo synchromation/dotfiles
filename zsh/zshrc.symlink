@@ -1,6 +1,6 @@
 # shortcut to this dotfiles path is $ZSH
 export DOT_FILES=$HOME/.dotfiles
-export ZSH=$DOT_FILES/oh-my-zsh
+export ZSH=$HOME/oh-my-zsh
 
 
 # legacy zsh config
