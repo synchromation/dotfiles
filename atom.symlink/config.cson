@@ -1,6 +1,10 @@
 "*":
-  Hydrogen:
-    kernelspec: "{\"kernelspecs\":{\"ruby\":{\"resource_dir\":\"/Users/denis/Library/Jupyter/kernels/ruby\",\"spec\":{\"argv\":[\"/Users/denis/.rbenv/versions/2.3.0/bin/iruby\",\"kernel\",\"{connection_file}\"],\"language\":\"ruby\",\"env\":{},\"display_name\":\"Ruby 2.3.0\"}},\"python3\":{\"resource_dir\":\"/usr/local/lib/python3.5/site-packages/ipykernel/resources\",\"spec\":{\"argv\":[\"/usr/local/opt/python3/bin/python3.5\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"],\"language\":\"python\",\"env\":{},\"display_name\":\"Python 3\"}}}}"
+  core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+    ]
   editor:
     fontFamily: "Source Code Pro for Powerline"
     fontSize: 17
@@ -10,3 +14,6 @@
     userId: "f3cd0861-62c1-373c-3ef3-8d9c92595f33"
   welcome:
     showOnStartup: false
+".source.swift":
+  editor:
+    preferredLineLength: 120
