@@ -26,6 +26,10 @@
 	<true/>
 	<key>ClosingHotkeySwitchesSpaces</key>
 	<false/>
+	<key>ClosingTmuxTabKillsTmuxWindows</key>
+	<true/>
+	<key>ClosingTmuxTabKillsTmuxWindows_selection</key>
+	<integer>0</integer>
 	<key>CommandSelection</key>
 	<true/>
 	<key>Control</key>
@@ -3099,17 +3103,25 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>CE5B141D-F0B5-45CB-A76E-7FFAE72459AF</string>
 	<key>NoSyncLastTipTime</key>
-	<real>488064855.37630498</real>
+	<real>488359210.82032901</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncNewWindowOrTabFromTmuxOpensTmux</key>
+	<true/>
+	<key>NoSyncNewWindowOrTabFromTmuxOpensTmux_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
@@ -3119,6 +3131,8 @@
 	<real>477728543.81510597</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>486596744.96631598</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
 		<string>000</string>
@@ -3130,6 +3144,7 @@
 		<string>0005</string>
 		<string>0006</string>
 		<string>0007</string>
+		<string>0008</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -3203,7 +3218,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-19T22:05:42Z</date>
+	<date>2016-08-03T06:25:10Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.1</string>
 	<key>SavePasteHistory</key>
@@ -3255,6 +3270,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.0</string>
+	<string>3.0.5</string>
 </dict>
 </plist>
