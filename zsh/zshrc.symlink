@@ -15,8 +15,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:"/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export LANG=en_US.UTF-8
 
-PATH=$PATH:/usr/local/smlnj-110.75/bin
-
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
