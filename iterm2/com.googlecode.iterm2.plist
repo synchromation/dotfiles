@@ -2901,11 +2901,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>300 593 606 456 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>219 391 918 512 0 0 1680 1050 </string>
+	<string>219 352 918 512 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>35 0 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 122 1010 907 0 0 1680 1050 </string>
+	<string>0 276 1680 774 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>840 4 840 1046 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_962623CD-5417-46FA-ACEB-80B67C33CE80</key>
@@ -3227,7 +3227,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux attach -t base || tmux new -s base</string>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -4044,7 +4044,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux attach -t base || tmux new -s base</string>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -4670,7 +4670,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-04T17:21:24Z</date>
+	<date>2016-08-08T06:28:12Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.1</string>
 	<key>SavePasteHistory</key>
