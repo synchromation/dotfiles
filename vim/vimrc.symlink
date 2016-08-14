@@ -13,9 +13,14 @@ Plugin 'gmarik/Vundle.vim'
 " Solarized
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'blueshirts/darcula'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+if has("gui_macvim")
+    Plugin 'blueshirts/darcula'
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'vim-airline/vim-airline-themes'
+else
+    Plugin 'chriskempson/base16-vim'
+endif
+
 Plugin 'tpope/vim-fugitive'
 Plugin 'elmcast/elm-vim'
 Plugin 'keith/swift.vim'
@@ -24,11 +29,26 @@ Plugin 'ervandew/supertab'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+if has("gui_macvim")
+    set background=dark
+    set lines=30
+    set columns=150
+    colorscheme darcula    
+    hi cursorline guibg=#444444
+    set cursorline
+    set colorcolumn=90
+    "  vim-airline
+    set laststatus=2
+    let g:airline_inactive_collapse = 0
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tagbar#enabled = 1
+    let g:airline_powerline_fonts = 1
+    let g:airline_theme = 'bubblegum'
+else
+    colorscheme base16-default-dark
+endif
+
 set guifont=SauceCodePowerline-Regular:h16
-set lines=30
-set columns=150
-set colorcolumn=90
-set background=dark
 
 syntax on
 set autoindent
@@ -38,14 +58,11 @@ set expandtab
 set encoding=utf-8
 set number
 
-set cursorline
-hi cursorline guibg=#444444
 
 " Autoreload on config save
 au! BufWritePost .vimrc so %
 au! BufWritePost .gvimrc so %
 
-colorscheme darcula
 
 map <F2> :NERDTreeToggle<CR>
 
@@ -78,14 +95,6 @@ inoremap <C-F> <C-X><C-F>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-
-"  vim-airline
-set laststatus=2
-let g:airline_inactive_collapse = 0
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'bubblegum'
 
 " elm-vim
 let g:elm_format_autosave = 1
