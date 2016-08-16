@@ -10,23 +10,22 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Solarized
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'chriskempson/base16-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elmcast/elm-vim'
 Plugin 'keith/swift.vim'
 Plugin 'ervandew/supertab'
+Plugin 'dracula/vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-colorscheme base16-default-dark
 set cursorline
-hi cursorline guibg=gray
+hi cursorline cterm=bold guibg=#444444
+set t_Co=256
 
 if has("gui_macvim")
     set lines=30
@@ -40,7 +39,7 @@ let g:airline_inactive_collapse = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16'
+let g:airline_theme = 'wombat'
 let g:airline#extensions#tabline#enabled = 1
 set guifont=SauceCodePowerline-Regular:h18
 
