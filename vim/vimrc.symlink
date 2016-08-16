@@ -13,14 +13,9 @@ Plugin 'gmarik/Vundle.vim'
 " Solarized
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-if has("gui_macvim")
-    Plugin 'blueshirts/darcula'
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'vim-airline/vim-airline-themes'
-else
-    Plugin 'chriskempson/base16-vim'
-endif
-
+Plugin 'chriskempson/base16-vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'elmcast/elm-vim'
 Plugin 'keith/swift.vim'
@@ -29,26 +24,26 @@ Plugin 'ervandew/supertab'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+colorscheme base16-default-dark
+set cursorline
+hi cursorline guibg=gray
+
 if has("gui_macvim")
-    set background=dark
     set lines=30
     set columns=150
-    colorscheme darcula    
-    hi cursorline guibg=#444444
-    set cursorline
     set colorcolumn=90
-    "  vim-airline
-    set laststatus=2
-    let g:airline_inactive_collapse = 0
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tagbar#enabled = 1
-    let g:airline_powerline_fonts = 1
-    let g:airline_theme = 'bubblegum'
-else
-    colorscheme base16-default-dark
 endif
 
-set guifont=SauceCodePowerline-Regular:h16
+" vim-airline
+set laststatus=2
+let g:airline_inactive_collapse = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'base16'
+let g:airline#extensions#tabline#enabled = 1
+set guifont=SauceCodePowerline-Regular:h18
+
 
 syntax on
 set autoindent
