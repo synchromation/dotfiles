@@ -38,6 +38,8 @@ set laststatus=2
 let g:airline_inactive_collapse = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'wombat'
 let g:airline#extensions#tabline#enabled = 1
@@ -51,7 +53,6 @@ set shiftwidth=4
 set expandtab
 set encoding=utf-8
 set number
-
 
 " Autoreload on config save
 au! BufWritePost .vimrc so %
@@ -77,6 +78,7 @@ set history=100
 let mapleader = ','
 
 " Buffer selection
+set wildchar=<Tab> wildmenu wildmode=full
 nnoremap <leader>n :bn<CR>
 nnoremap <leader>p :bp<CR>
 nnoremap <C-Tab> :bn<CR>
