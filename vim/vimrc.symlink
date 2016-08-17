@@ -19,6 +19,8 @@ Plugin 'elmcast/elm-vim'
 Plugin 'keith/swift.vim'
 Plugin 'ervandew/supertab'
 Plugin 'dracula/vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,6 +47,10 @@ let g:airline_theme = 'wombat'
 let g:airline#extensions#tabline#enabled = 1
 set guifont=SauceCodePowerline-Regular:h18
 
+" Snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 syntax on
 set autoindent
@@ -105,4 +111,7 @@ au FileType elm nmap <leader>r <Plug>(elm-repl)
 au FileType elm nmap <leader>e <Plug>(elm-error-detail)
 au FileType elm nmap <leader>d <Plug>(elm-show-docs)
 au FileType elm nmap <leader>w <Plug>(elm-browse-docs)
+
+" Fix backspace
+set backspace=2
 
