@@ -11,6 +11,7 @@ brew 'hub'
 brew 'swiftlint'
 brew 'rbenv'
 brew 'ruby-build'
+brew 'vim'
 
 cask 'spectacle'
 cask 'vlc'
