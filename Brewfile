@@ -12,6 +12,7 @@ brew 'swiftlint'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'vim'
+brew 'carthage'
 
 cask 'spectacle'
 cask 'vlc'
