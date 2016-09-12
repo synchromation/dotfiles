@@ -67,3 +67,7 @@
 	always-cleanup = true
 [include]
 	path = ~/.gitconfig.reflow
+[pager]
+	diff = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
+	log = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
+	show = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
