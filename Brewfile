@@ -31,3 +31,5 @@ cask 'anki'
 cask 'nvalt'
 cask 'atom'
 cask 'qbittorrent'
+cask 'alfred'
+
