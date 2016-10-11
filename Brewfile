@@ -32,4 +32,5 @@ cask 'nvalt'
 cask 'atom'
 cask 'qbittorrent'
 cask 'alfred'
+cask 'dash'
 
