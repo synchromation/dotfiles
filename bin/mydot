@@ -12,10 +12,6 @@ $DOT_FILES/macos/set-defaults.sh
 # Install homebrew
 $DOT_FILES/homebrew/install.sh 2>&1
 
-# Upgrade homebrew
-echo "› brew update"
-brew update
-
 # Install software
 echo "› $DOT_FILES/script/install"
 $DOT_FILES/script/install
