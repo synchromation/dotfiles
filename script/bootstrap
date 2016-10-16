@@ -139,25 +139,14 @@ install_dotfiles () {
   done
 }
 
-install_hosts() {
-  info 'installing really fancy hosts file'
-  local overwrite_all=false backup_all=false skip_all=false
-
-  src="$DOTFILES_ROOT/system/hosts"
-  dst="/etc/hosts"
-  sudo ln -f "$src" "$dst" 
-  success "linked $src to $dst"  
-}
-
 setup_gitconfig
 install_dotfiles
-install_hosts
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
 then
   info "installing dependencies"
-  if source bin/dot > /tmp/dotfiles-dot 2>&1
+  if source bin/mydot > /tmp/dotfiles-dot 2>&1
   then
     success "dependencies installed"
   else
