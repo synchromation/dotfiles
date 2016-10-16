@@ -148,6 +148,7 @@ killall Dock
 
 # Set custom preferences location
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string $DOT_FILES/iterm2
+defaults write com.googlecode.iterm2 LoadPreferencesFromCustomFolder -bool true
 
 # Disable animation
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
