@@ -5,6 +5,7 @@ mas install 907364780 # Pomodoro
 mas install 692867256 # Simplenote
 mas install 747648890 # Telegram
 mas install 425424353 # Unarchiver
+mas install 585829637 # Todoist
 
 # The Brewfile handles Homebrew-based app and library installs, but there may
 # still be updates and installables in the Mac App Store. There's a nifty
