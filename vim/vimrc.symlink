@@ -67,6 +67,8 @@ au! BufWritePost .gvimrc so %
 au BufRead,BufNewFile Fastfile set filetype=ruby
 au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile Podfile set filetype=ruby
+au BufRead,BufNewFile *.podspec set filetype=ruby
+au BufRead,BufNewFile Dangerfile set filetype=ruby
 
 map <F2> :NERDTreeToggle<CR>
 
