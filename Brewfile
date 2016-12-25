@@ -14,7 +14,7 @@ brew 'ruby-build'
 brew 'vim'
 brew 'carthage'
 brew 'mas'
-
+brew 'the_silver_searcher'
 cask 'spectacle'
 cask 'vlc'
 cask 'spotify'
