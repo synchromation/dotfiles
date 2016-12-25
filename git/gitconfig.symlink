@@ -1,15 +1,12 @@
-# Sample gitconfig
-#
-
 [hub]
-        protocol = https
+    protocol = https
 [user]
-        name = Denis Lebedev
+    name = Denis Lebedev
 	email = d2.lebedev@gmail.com
 [credential]
 	helper = osxkeychain
 [alias]
-        co = checkout
+    co = checkout
 	ci = commit
 	st = status
 	br = branch
@@ -18,9 +15,9 @@
 	ds = diff --stat=160,120
 	dh1 = diff HEAD~1
 	promote = !$DOT_FILES/bin/git-promote
-        wtf     = !$DOT_FILES/bin/git-wtf
-        rank-contributors = !$DOT_FILES/bin/git-rank-contributors
-        count   = !git shortlog -sn
+    wtf = !$DOT_FILES/bin/git-wtf
+    rank-contributors = !$DOT_FILES/bin/git-rank-contributors
+    count = !git shortlog -sn
 	r = !git l -30
 	ra = !git r --all
 	l = "!. $DOT_FILES/functions/git-pretty-log && git_pretty_log"
@@ -34,31 +31,32 @@
         branch = auto
         ui = true
 [core]
-        excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 	editor = vim
 
 	# Make `git rebase` safer on OS X
   	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
    	trustctime = false
 [apply]
-        whitespace = nowarn
+    whitespace = nowarn
 [mergetool]
-        keepBackup = false
+    keepBackup = false
 [difftool]
-        prompt = false
+    prompt = false
 [help]
-        autocorrect = 1
+    autocorrect = 1
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to suppress warning message
-        default = simple
+    # See `git help config` (search for push.default)
+    # for more information on different options of the below setting.
+    #
+    # Setting to git 2.0 default to suppress warning message
+    default = simple
 [merge "mergepbx"]
 	# Do not forget to add '*.pbxproj merge=mergepbx' to your project .gitattributes
-        name = Xcode project files merger
-	driver = mergepbx %O %A %B
-	
+    name = Xcode project files merger
+    driver = mergepbx %O %A %B
+[mergetool "mergepbx"]
+    cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
