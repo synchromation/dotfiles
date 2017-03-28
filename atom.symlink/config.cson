@@ -13,6 +13,7 @@
       "tmp"
       "vendor"
     ]
+    telemetryConsent: "no"
   editor:
     fontFamily: "Source Code Pro for Powerline"
     fontSize: 17
