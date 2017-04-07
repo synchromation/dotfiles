@@ -25,11 +25,16 @@
 	# Goodness (summary of diff lines added/removed/total)
 	gn = goodness
 	gnc = goodness --cached
+	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
+    
+    prune = fetch --prune
+    undo = reset --soft HEAD^
+    stash-all = stash save --include-untracked
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
 [core]
     excludesfile = ~/.gitignore
 	editor = vim
@@ -72,3 +77,5 @@
 [rerere]
     enabled = true
 
+[merge]
+	conflictstyle = diff3
