@@ -19,6 +19,7 @@ Plugin 'elmcast/elm-vim'
 Plugin 'keith/swift.vim'
 Plugin 'ervandew/supertab'
 Plugin 'dracula/vim'
+Plugin 'crusoexia/vim-monokai'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
@@ -53,6 +54,7 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 syntax on
+colo monokai
 set autoindent
 set tabstop=4
 set shiftwidth=4
