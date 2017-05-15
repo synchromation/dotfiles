@@ -117,3 +117,5 @@ au FileType elm nmap <leader>w <Plug>(elm-browse-docs)
 " Fix backspace
 set backspace=2
 
+" Disable beeping
+set noerrorbells visualbell t_vb=
