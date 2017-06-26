@@ -1,8 +1,8 @@
 [hub]
     protocol = https
 [user]
-    name = Denis Lebedev
-	email = d2.lebedev@gmail.com
+    name = Nick Banks
+	email = nick.banks@synchromation.commit
 [credential]
 	helper = osxkeychain
 [alias]
@@ -37,7 +37,7 @@
     ui = true
 [core]
     excludesfile = ~/.gitignore
-	editor = vim
+	editor = subl -n -w
 
 	# Make `git rebase` safer on OS X
   	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
@@ -46,6 +46,12 @@
     whitespace = nowarn
 [mergetool]
     keepBackup = false
+[mergetool "mergepbx"]
+    cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+[merge "mergepbx"]
+	# Do not forget to add '*.pbxproj merge=mergepbx' to your project .gitattributes
+    name = Xcode project files merger
+    driver = mergepbx %O %A %B
 [difftool]
     prompt = false
 [help]
@@ -56,12 +62,6 @@
     #
     # Setting to git 2.0 default to suppress warning message
     default = simple
-[merge "mergepbx"]
-	# Do not forget to add '*.pbxproj merge=mergepbx' to your project .gitattributes
-    name = Xcode project files merger
-    driver = mergepbx %O %A %B
-[mergetool "mergepbx"]
-    cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
@@ -76,6 +76,5 @@
 	show = sed \"s/^\\([^-+ ]*\\)[-+ ]/\\\\1/\"
 [rerere]
     enabled = true
-
 [merge]
 	conflictstyle = diff3
