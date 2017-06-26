@@ -2,7 +2,7 @@
     protocol = https
 [user]
     name = Nick Banks
-	email = nick.banks@synchromation.commit
+	email = nick.banks@synchromation.com
 [credential]
 	helper = osxkeychain
 [alias]
