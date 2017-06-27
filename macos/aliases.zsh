@@ -1,6 +1,11 @@
 # Enable aliases to be sudo'ed
 alias sudo="sudo "
 
+alias edit=subl
+
+alias grepr="egrep -iI -drecurse"
+alias grepc="egrep -iI -dskip"
+
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
  # Open with finder
