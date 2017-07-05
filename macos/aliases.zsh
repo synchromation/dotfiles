@@ -12,9 +12,9 @@ alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias o="open"
 alias oo="open ."
 
-# Easier navigation
-alias ..="cd .."
-alias ...="cd ../.."
+alias tw="cd ~/src/transferwise-ios"
+alias edita="edit ~/.dotfiles/macos/aliases.zsh"
+alias editz="edit ~/.dotfiles/zsh/zshrc.symlink"
 
 # CocoaPods
 alias pi="pod install"
