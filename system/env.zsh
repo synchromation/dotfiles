@@ -1,2 +1,2 @@
 test -f ~/local.rc && source ~/local.rc
-export EDITOR=vim
+export EDITOR=subl -n -w
