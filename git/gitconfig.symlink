@@ -21,6 +21,7 @@
 	r = !git l -30
 	ra = !git r --all
 	l = "!. $DOT_FILES/functions/git-pretty-log && git_pretty_log"
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 
 	# Goodness (summary of diff lines added/removed/total)
 	gn = goodness
@@ -63,8 +64,9 @@
     # Setting to git 2.0 default to suppress warning message
     default = simple
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 	required = true
 [reflow]
 	always-cleanup = true

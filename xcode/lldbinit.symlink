@@ -1,1 +1,5 @@
 command script import usr/local/Cellar/chisel/1.5.0/libexec/fblldb.py
+
+### Reveal LLDB commands support - DO NOT MODIFY
+command script import /Applications/Reveal.app/Contents/SharedSupport/Scripts/RevealServerCommands.py
+###

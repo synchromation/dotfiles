@@ -9,6 +9,8 @@ plugins=(git z bundler brew github)
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(rbenv init -)"
+
 # User configuration
 
 export LANG=en_US.UTF-8
